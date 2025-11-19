@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>logo-bobs-dogz.png</title>
+    <title>Bob's DOGZ - Best Hotdogs in Town</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Optional: Vintage-style Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
     <style>
@@ -18,24 +17,13 @@
             --border: #222222;
         }
 
-        * {
-            box-sizing: border-box;
-        }
-
         body {
             margin: 0;
-            padding: 0;
             background: var(--bg);
+            font-family: "Roboto", sans-serif;
             color: var(--ink);
-            font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         }
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        /* Top bar / logo area */
         header {
             border-bottom: 3px solid var(--border);
             background: #fff;
@@ -53,26 +41,8 @@
             justify-content: space-between;
         }
 
-        .<div style="display:flex; align-items:center; gap:10px;">
-    <img src="logo.png" alt="logo-bobs-dogz.png" style="height:80px; border-radius:8px;">
-</div>
- {
-            font-family: "Oswald", "Impact", system-ui, sans-serif;
-            font-size: 32px;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            border: 2px solid var(--ink);
-            padding: 6px 14px;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .logo-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            border: 2px solid var(--ink);
+        .logo-img {
+            height: 90px;
         }
 
         nav {
@@ -84,6 +54,8 @@
         }
 
         nav a {
+            text-decoration: none;
+            color: var(--ink);
             position: relative;
         }
 
@@ -102,7 +74,6 @@
             width: 100%;
         }
 
-        /* Hero section */
         .hero {
             max-width: 1100px;
             margin: 0 auto;
@@ -114,14 +85,14 @@
         }
 
         .hero-tagline {
-            font-family: "Oswald", "Impact", system-ui, sans-serif;
+            font-family: "Oswald", sans-serif;
             text-transform: uppercase;
             letter-spacing: 0.25em;
             font-size: 13px;
         }
 
         .hero-title {
-            font-family: "Oswald", "Impact", system-ui, sans-serif;
+            font-family: "Oswald", sans-serif;
             font-size: 52px;
             text-transform: uppercase;
             letter-spacing: 0.12em;
@@ -135,13 +106,6 @@
             line-height: 1.5;
         }
 
-        .hero-buttons {
-            margin-top: 24px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
         .btn-main,
         .btn-ghost {
             padding: 10px 20px;
@@ -150,7 +114,6 @@
             font-size: 14px;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            background: #fff;
             cursor: pointer;
             display: inline-flex;
             align-items: center;
@@ -171,16 +134,10 @@
             background: #eee;
         }
 
-        .hero-note {
-            margin-top: 16px;
-            font-size: 14px;
-            color: #555;
-        }
-
         .hero-card {
             border: 3px solid var(--border);
             background: var(--card);
-            padding: 20px 20px 24px;
+            padding: 20px;
             box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
         }
 
@@ -194,15 +151,8 @@
         }
 
         .hero-price {
-            font-family: "Oswald", "Impact", system-ui, sans-serif;
+            font-family: "Oswald", sans-serif;
             font-size: 40px;
-        }
-
-        .hero-price span {
-            font-size: 16px;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            margin-left: 6px;
         }
 
         .hero-list {
@@ -211,34 +161,20 @@
             font-size: 15px;
         }
 
-        .hero-list li {
-            margin-bottom: 4px;
-        }
-
-        /* Section base */
         section {
             max-width: 1100px;
             margin: 0 auto;
             padding: 30px 20px 40px;
         }
 
-        .section-label {
-            text-transform: uppercase;
-            letter-spacing: 0.22em;
-            font-size: 12px;
-            margin-bottom: 4px;
-            color: #666;
-        }
-
         .section-title {
-            font-family: "Oswald", "Impact", system-ui, sans-serif;
+            font-family: "Oswald", sans-serif;
             font-size: 30px;
             text-transform: uppercase;
             letter-spacing: 0.12em;
             margin: 0 0 16px;
         }
 
-        /* Menu section */
         .menu-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -248,95 +184,37 @@
         .menu-card {
             border: 2px solid var(--border);
             background: var(--card);
-            padding: 14px 14px 16px;
+            padding: 14px;
         }
 
         .menu-name {
-            font-family: "Oswald", "Impact", system-ui, sans-serif;
+            font-family: "Oswald", sans-serif;
             font-size: 18px;
             text-transform: uppercase;
-            letter-spacing: 0.12em;
-        }
-
-        .menu-line {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-top: 4px;
-            margin-bottom: 4px;
         }
 
         .menu-price {
             font-weight: 600;
         }
 
-        .menu-desc {
-            font-size: 14px;
-            color: #555;
-            margin-top: 4px;
-        }
-
-        /* Location / hours */
         .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 24px;
         }
 
-        .info-card {
-            border: 2px solid var(--border);
-            background: var(--card);
-            padding: 14px 16px 16px;
-        }
-
-        .info-heading {
-            font-family: "Oswald", "Impact", system-ui, sans-serif;
-            font-size: 16px;
-            text-transform: uppercase;
-            letter-spacing: 0.16em;
-            margin-bottom: 6px;
-        }
-
-        .info-row {
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-            margin-bottom: 3px;
-        }
-
-        /* Contact */
-        .contact-text {
-            font-size: 15px;
-            max-width: 520px;
-        }
-
-        .contact-highlight {
-            font-family: "Oswald", "Impact", system-ui, sans-serif;
-            font-size: 22px;
-            margin: 10px 0 4px;
-        }
-
-        .contact-line {
-            font-size: 16px;
-        }
-
         footer {
             border-top: 2px solid var(--border);
-            padding: 12px 20px 16px;
+            padding: 12px 20px;
             text-align: center;
             font-size: 13px;
             color: #555;
             margin-top: 20px;
         }
 
-        /* Responsive tweaks */
         @media (max-width: 800px) {
             .hero {
                 grid-template-columns: 1fr;
-            }
-
-            .hero-card {
-                order: -1;
             }
 
             .hero-title {
@@ -353,6 +231,10 @@
                 gap: 12px;
                 flex-wrap: wrap;
             }
+
+            .logo-img {
+                height: 70px;
+            }
         }
     </style>
 </head>
@@ -360,10 +242,8 @@
 
 <header>
     <div class="nav-inner">
-        <div class="logo-text">
-            <span class="logo-dot"></span>
-            <span>BOB'S DOGZ</span>
-        </div>
+        <img src="logo-bobs-dogz.png" class="logo-img" alt="Bob's Dogz Logo">
+
         <nav>
             <a href="#menu">Menu</a>
             <a href="#location">Location &amp; Hours</a>
@@ -372,9 +252,99 @@
     </div>
 </header>
 
-<main>
-    <!-- HERO -->
-    <section class="hero">
+<!-- HERO SECTION -->
+<section class="hero">
+    <div>
+        <div class="hero-tagline">Since 2025 · Maine</div>
+        <h1 class="hero-title">Classic hotdogs.<br>Zero nonsense.</h1>
+        <p class="hero-sub">
+            Bob’s DOGZ serves up old-school dogs the way they’re meant to be:
+            simple, hot, and loaded with flavor.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#location" class="btn-main">Find the Cart →</a>
+            <a href="#menu" class="btn-ghost">View Today’s Menu</a>
+        </div>
+    </div>
+
+    <aside class="hero-card">
+        <div class="hero-card-header">Today’s Special</div>
+        <div class="hero-price">$7 <span>combo</span></div>
+        <ul class="hero-list">
+            <li>1 Classic Dog</li>
+            <li>Bag of Chips</li>
+            <li>Cold Drink</li>
+        </ul>
+    </aside>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+    <h2 class="section-title">Menu</h2>
+
+    <div class="menu-grid">
+        <div class="menu-card">
+            <div class="menu-name">Classic Dog</div>
+            <div class="menu-price">$3.00</div>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-name">Bob’s Loaded Dog</div>
+            <div class="menu-price">$4.50</div>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-name">Cheese Dog</div>
+            <div class="menu-price">$3.75</div>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-name">Chips</div>
+            <div class="menu-price">$1.50</div>
+        </div>
+
+        <div class="menu-card">
+            <div class="menu-name">Cold Drinks</div>
+            <div class="menu-price">$2.00</div>
+        </div>
+    </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location">
+    <h2 class="section-title">Location &amp; Hours</h2>
+
+    <div class="info-grid">
         <div>
-            <div class="hero-tagline">Since 2025 · Maine</div>
-            <h1 class="hero-title">Classic hotdog
+            <h3>Location</h3>
+            <p>Bob’s DOGZ Cart<br>Maine, USA<br>
+            (Update with your real location).</p>
+        </div>
+
+        <div>
+            <h3>Hours</h3>
+            <p>Mon–Fri: 11am–3pm<br>
+            Saturday: 12pm–4pm<br>
+            Sunday: Closed</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Phone: [ Add your number ]<br>
+       Email: [ yourname@yourdomain.com ]</p>
+</section>
+
+<footer>
+    © <span id="year"></span> Bob's DOGZ · All Rights Reserved
+</footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
